@@ -1,1 +1,26 @@
-@import url();
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+body {
+    margin: 60px;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    padding: 15px;
+    border-radius: 3px;
+    display: block;
+    width: fit-content;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#click {
+    background-color: #008000;
+}
+
+#email {
+    background-color: #ff8c00;
+}

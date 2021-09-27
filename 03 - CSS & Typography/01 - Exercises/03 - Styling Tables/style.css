@@ -8,26 +8,23 @@ table, th, td {
     border-style: solid;
     border-collapse: collapse;
     width: 80%;
+    text-align: left;
 }
 
-table tr th, table tr td {
+th, td {
     width: 33%;
-}
-
-table tr th, table tr td {
     padding: 5px;
 }
 
-table tr th {
-    text-align: left;
+th {
     background-color: rgb(221, 221, 221);
 }
 
-table tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd):not(:hover) td {
     background-color: rgb(241, 241, 241);
 }
 
-table tbody tr:hover {
+tbody tr:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
