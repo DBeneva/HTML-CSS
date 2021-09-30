@@ -1,0 +1,71 @@
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 1800px;
+    font-family: Helvetica, sans-serif;
+    margin: 60px;
+}
+
+form {
+    width: 40vw;
+    min-height: 538px;
+}
+
+section {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+section:first-child {
+    width: 45%;
+    background: url(./Images/peak.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: white;
+    text-align: center;
+    padding: 15px 0px 30px 0px;
+}
+
+section:first-child p {
+    padding-top: 350px;
+    font-style: italic;
+}
+
+section:last-child {
+    height: inherit;
+    border: 4px solid black;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 80px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    color: lightgray;
+    padding: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    padding: 10px;
+}

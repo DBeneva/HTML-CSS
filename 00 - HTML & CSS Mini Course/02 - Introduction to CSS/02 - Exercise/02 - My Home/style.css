@@ -1,0 +1,38 @@
+html {
+    font-family: Open Sans, sans-serif;
+    margin: 60px;
+    width: 1180px;
+}
+
+header article {
+    border-left: 1px solid #656565;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+header article:first-child {
+    width: 61%;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main article {
+    width: 30%;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+p {
+   color: #656565;
+   line-height: 1.2;
+   font-size: 19px;
+}
+
+img {
+    height: 215px;
+}
