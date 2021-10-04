@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    text-align: center;
 }
 
 *, *::before, *::after {
@@ -8,6 +7,7 @@ html {
 }
 
 section {
+    text-align: center;
     width: 250px;
     height: 250px;
     border: 4px dotted rgb(107, 223, 165);

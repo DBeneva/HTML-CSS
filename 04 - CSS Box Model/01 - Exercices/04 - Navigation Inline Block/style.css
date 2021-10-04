@@ -4,26 +4,30 @@ html {
 }
 
 body {
-    margin: 60px;
-    width: 60%;
+    margin: 70px auto;
+    max-width: 1200px;
 }
 
 header {
-    border-bottom: 1px solid rgb(51, 51, 51);
+    border-bottom: 2px solid rgb(51, 51, 51);
+}
+
+h1, nav {
+    display: inline-block;
 }
 
 h1 {
-    display: inline-block;
+    margin-right: 30px;
 }
 
-nav, nav li {
+nav li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 12px;
     font-size: 18px;
     font-weight: 600;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: rgb(73, 136, 73);
 }

@@ -1,16 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(238, 238, 238);
-    margin: 60px;
-    width: 60%;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
 }
 
-li {
+.gallery {
+    margin: 60px 120px;
+}
+
+.gallery li {
     display: inline-block;
+    vertical-align: middle;
     border: 0.4rem solid black;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 12px 8px;
+    width: 30%;
 }
 
-img {
-    max-height: 400px;
+.gallery img {
+    width: 100%;
 }
