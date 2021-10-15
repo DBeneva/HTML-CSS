@@ -12,6 +12,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Open Sans";
+    line-height: 1.2em;
+    color: #54546D;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 *, ::before, ::after {
@@ -31,20 +38,24 @@ h1, h2, h3, h4 {
 .nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: center;
+    padding: 5px 0 20px 0;
 }
 
 .nav-logo {
-    max-width: 150px;
+    max-width: 130px;
 }
 
 .nav-logo-img {
     width: 100%;
+    margin-left: 40px;
 }
 
 .nav-list {
     display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-left: 100px;
 }
 
 .nav-list-item {
@@ -53,8 +64,8 @@ h1, h2, h3, h4 {
 
 .nav-list-item a {
     text-decoration: none;
+    font-size: smaller;
     color: #564F6D;
-    margin: 20px 8px;
 }
 
 .programs {
@@ -63,29 +74,48 @@ h1, h2, h3, h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    max-height: 410px;
+    margin-bottom: 300px;
+}
+
+.programs::before {
+    content: '';
+    background-image: url('./images/calculator-icon.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -60px;
+    top: 100px;
 }
 
 .programs-title {
     color: white;
     text-align: center;
-    margin-bottom: 40px;
     flex-basis: 100%;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .program {
     background-color: white;
     border-radius: 10px;
-    padding: 15px;
-    width: 30%;
+    width: 35%;
     max-width: 400px;
+    min-width: 250px;
     margin: 15px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 7px -3px black;
+    position: relative;
+    top: 30px;
 }
 
 .program-title {
     font-size: 24px;
-    color: #54546D;
+    padding-top: 15px;
 }
 
 .program-cta {
@@ -96,5 +126,92 @@ h1, h2, h3, h4 {
     padding: 10px 30px;
     border: none;
     box-shadow: 1px 1px 6px -2px black;
-    margin: 30px auto;
+    margin: 45px auto;
+}
+
+.program-footer {
+    color: white;
+    padding: 5px 0;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.design-basics .program-footer {
+    background: rgb(4,156,62);
+    background: linear-gradient(90deg, rgba(4,156,62,1) 0%, rgba(76,215,129,1) 100%);
+}
+
+.fundamentals .program-footer {
+    background: rgb(77,108,136);
+    background: linear-gradient(90deg, rgba(77,108,136,1) 0%, rgba(98,155,208,1) 100%);
+}
+
+.professional .program-footer {
+    background: rgb(75,56,166);
+    background: linear-gradient(90deg, rgba(75,56,166,1) 0%, rgba(138,123,226,1) 100%);
+}
+
+.fundamentals .program-footer, .professional .program-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.program-footer-onsite {
+    border-right: 2px solid white;
+    padding: 0 7px 0 7px;
+}
+
+.program-footer-online, .program-footer-onsite {
+    flex-basis: 50%;
+}
+
+.onsite-or-online {
+    height: 100%;
+    margin: 0 auto 60px auto;
+    padding: 0 100px 0 100px;
+}
+
+.onsite-or-online-text {
+    margin-bottom: 50px;
+}
+
+.onsite-or-online-table {
+    overflow: hidden;
+    border-collapse: collapse;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+}
+
+.onsite-or-online-table tr {
+    background-color: #E6E6E6;
+}
+
+.onsite-or-online-table tr td {
+    padding: 15px 20px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.onsite-or-online-table tr:nth-child(even) {
+    background-color: #F8F8F8;
+}
+
+.postbank {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postbank-logo {
+    margin-left: 70px;
+}
+
+.footer {
+    color: #908A9F;
+    text-align: center;
+    font-size: 18px;
+    background-color: #54546D;
+    margin-top: 150px;
+    padding: 30px 0 30px 0;
 }
