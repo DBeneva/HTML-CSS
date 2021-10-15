@@ -1,0 +1,49 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body, section, header, main, aside, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    background-color: #EEEEEE;
+    max-width: 1200px;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+header, main, aside, footer {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px -3px black;
+    margin: 10px 0 10px 10px;
+    padding: 15px 0 15px 15px;
+}
+
+header, footer, section {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 80px;
+}
+
+section {
+    display: flex;
+    flex-basis: 300px;
+}
+
+main {
+    flex-grow: 3;
+    margin-right: 10px;
+}
+
+aside {
+    flex-grow: 1;
+}
