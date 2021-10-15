@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(./Open_Sans/static/OpenSans/OpenSans-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: Montserrat;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav-logo {
+    max-width: 150px;
+}
+
+.nav-logo-img {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    list-style: none;
+}
+
+.nav-list-item a {
+    text-decoration: none;
+    color: #564F6D;
+    margin: 20px 8px;
+}
+
+.programs {
+    background-color: #54546D;
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.programs-title {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+    font-size: 25px;
+}
+
+.program {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    max-width: 400px;
+    margin: 15px;
+    text-align: center;
+}
+
+.program-title {
+    font-size: 24px;
+    color: #54546D;
+}
+
+.program-cta {
+    background-color: #9A5DC6;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: 1px 1px 6px -2px black;
+    margin: 30px auto;
+}
