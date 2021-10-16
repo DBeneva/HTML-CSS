@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 60px;
+    max-width: 800px;
+}
+
+.parent {
+    background-color: #1a86f3;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 1px 1px 10px -2px black;
+    width: 600px;
+    padding: 20px 0;
+    height: 200px;
+    display: flex;
+    /* flex-flow: nowrap row; */
+    /* align-items: top; */
+    /* justify-content: stretch; */
+    /* text-align: center; */
+}
+
+.child {
+    background-color: rgb(238, 238, 238);
+    color: black;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    padding: 20px;
+    margin: 0;
+    /* flex-grow: 1; */
+    /* width: 33.333%; */
+    height: 70px;
+    text-align: center;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    /* box-shadow: 1px 1px 6px -2px black; */
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+}
+
+.first {
+    flex-grow: 3;
+}
+
+.second {
+    flex-grow: 1;
+}
+
+.first {
+    width: 70%;
+}
+
+.second {
+    width: 30%;
+}
