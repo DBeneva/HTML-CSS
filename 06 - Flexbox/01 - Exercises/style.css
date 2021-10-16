@@ -12,17 +12,17 @@ body {
 }
 
 .parent {
-    background-color: #1a86f3;
+    background-color: #2E74B5;
     border-radius: 5px;
-    padding: 0;
+    padding: 20px 0;
     box-shadow: 1px 1px 10px -2px black;
     width: 600px;
-    padding: 20px 0;
+    /* padding: 40px 0; */
     height: 200px;
     display: flex;
     /* flex-flow: nowrap row; */
-    /* align-items: top; */
-    /* justify-content: stretch; */
+    align-items: center;
+    justify-content: center;
     /* text-align: center; */
 }
 
@@ -31,31 +31,14 @@ body {
     color: black;
     font-size: 25px;
     font-family: Georgia, serif;
-    padding: 20px;
-    margin: 0;
-    /* flex-grow: 1; */
+    padding: 20px 40px;
     /* width: 33.333%; */
-    height: 70px;
+    margin: 0 10px;
+    /* flex-grow: 1; */
     text-align: center;
     border-radius: 5px;
     border: 0.5px solid gray;
     /* box-shadow: 1px 1px 6px -2px black; */
-    /* display: inline-block; */
+    display: inline-block;
     /* vertical-align: middle; */
-}
-
-.first {
-    flex-grow: 3;
-}
-
-.second {
-    flex-grow: 1;
-}
-
-.first {
-    width: 70%;
-}
-
-.second {
-    width: 30%;
 }

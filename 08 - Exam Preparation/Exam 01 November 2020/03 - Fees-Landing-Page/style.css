@@ -8,6 +8,14 @@
     src: url(./Open_Sans/static/OpenSans/OpenSans-Regular.ttf) format("truetype");
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -19,10 +27,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-}
-
-*, ::before, ::after {
-    box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
@@ -39,7 +43,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0 20px 0;
+    padding: 15px 50px;
 }
 
 .nav-logo {
@@ -48,14 +52,13 @@ h1, h2, h3, h4 {
 
 .nav-logo-img {
     width: 100%;
-    margin-left: 40px;
 }
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 30%;
-    padding-left: 100px;
+    width: 25%;
 }
 
 .nav-list-item {
@@ -68,15 +71,19 @@ h1, h2, h3, h4 {
     color: #564F6D;
 }
 
-.programs {
+.programs-section {
     background-color: #54546D;
     padding: 70px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     position: relative;
     max-height: 410px;
     margin-bottom: 300px;
+}
+
+.programs {
+    display: flex;
 }
 
 .programs::before {
@@ -100,7 +107,7 @@ h1, h2, h3, h4 {
 .program {
     background-color: white;
     border-radius: 10px;
-    width: 35%;
+    width: 40%;
     max-width: 400px;
     min-width: 250px;
     margin: 15px;
@@ -135,6 +142,10 @@ h1, h2, h3, h4 {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.program-footer p {
+    font-size: 13px;
 }
 
 .design-basics .program-footer {
@@ -204,7 +215,7 @@ h1, h2, h3, h4 {
 }
 
 .postbank-logo {
-    margin-left: 70px;
+    /* margin-right: 70px; */
 }
 
 .footer {
