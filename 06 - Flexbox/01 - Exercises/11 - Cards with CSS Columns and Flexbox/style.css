@@ -8,9 +8,8 @@ body {
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
+    margin: 20px auto 0 auto;
+    max-width: 1000px;
 }
 
 h2 {
@@ -20,19 +19,35 @@ h2 {
 }
 
 section {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
     max-height: 300vh;
+    width: 100%;
+}
+
+.flex section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.masonry section {
+    column-count: 3;
 }
 
 .card {
     background-color: white;
-    max-width: 300px;
+    width: 300px;
     line-height: 1.5;
     border-radius: 10px;
     box-shadow: 1px 1px 6px -2px gray;
     margin: 10px;
+}
+
+.masonry .card {
+    break-inside: avoid-column;
+}
+
+.flex .card {
+    flex-basis: 30%;
 }
 
 img {
