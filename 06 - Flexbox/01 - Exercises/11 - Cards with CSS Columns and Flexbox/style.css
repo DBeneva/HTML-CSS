@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-weight: 200;
+    margin-left: 10px;
+}
+
+section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    max-height: 300vh;
+}
+
+.card {
+    background-color: white;
+    max-width: 300px;
+    line-height: 1.5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px -2px gray;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card p {
+    padding: 0 20px;
+}
+
+.card footer {
+    padding-bottom: 10px;
+    border-top: 2px solid #CCCCCC;
+}

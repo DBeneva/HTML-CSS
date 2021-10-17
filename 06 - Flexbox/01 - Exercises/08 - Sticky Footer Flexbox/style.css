@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 60px 85px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-wrap: wrap;
+    height: 100hv;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1, h2, p {
+    padding-left: 20px;
+}
+
+header {
+    border-bottom: 2px solid rgb(0,0,0);
+    margin-bottom: 35px;
+    flex-basis: 100%;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+footer {
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    flex-basis: 100%;
+    margin-top: 40px;
+    padding: 10px;
+}

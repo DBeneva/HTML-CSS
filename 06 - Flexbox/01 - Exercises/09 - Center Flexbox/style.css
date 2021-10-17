@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 450px;
+    padding: 3px 40px 30px 20px;
+    box-shadow: 1px 1px 20px 0px gray;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: Georgia, serif;
+}
