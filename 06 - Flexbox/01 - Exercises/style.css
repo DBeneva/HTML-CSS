@@ -30,7 +30,7 @@ body {
 
 .child {
     background-color: rgb(238, 238, 238);
-    color: black;
+    color: #000;
     font-size: 25px;
     font-family: Georgia, serif;
     padding: 20px 40px;
@@ -50,8 +50,4 @@ body {
     display: inline-block;
     /* align-self: center; */
     /* vertical-align: middle; */
-}
-
-.first {
-    title: "First one EVER";
 }
