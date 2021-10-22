@@ -1,3 +1,10 @@
+@import url("finerprint.css") print;
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightyellow;
+    }
+}
+
 html {
     box-sizing: border-box;
 }
