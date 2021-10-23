@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 30px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    color: #484848;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #CDCDCD;
+}
+
+.table-head {
+    background-color: #333333;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    width: 33%;
+}
+
+.big-screen tr:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+.phone p {
+    border: 1px solid #CDCDCD;
+    margin: 0;
+    padding: 8px;
+    color: #0E0247;
+    display: none;
+}
+
+.phone p:nth-child(1),
+.phone p:nth-child(2),
+.phone p:nth-child(3) {
+    background-color: #F1F1F1;
+}
+
+strong {
+    padding-right: 15px;;
+}
+
+@media screen and (max-width: 600px) {
+    .big-screen {
+        display: none;
+    }
+
+    .phone p {
+        display: block;
+    }
+}
