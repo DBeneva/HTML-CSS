@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <img src="./images/logo-header.svg" alt="SoftUni Logo">
-        <nav>
+        <img class="logo" src="./images/logo-header.svg" alt="SoftUni Logo">
+        <nav class="header-nav">
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Curriculum</a></li>
-                <li><a href="#">Certificates</a></li>
+                <li class="li-active"><a href="#">Certificates</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Fees</a></li>
                 <li><a href="#">Blog</a></li>
@@ -24,8 +24,8 @@
         </nav>
     </header>
     <main>
-        <section class="section-presentation">
-            <article class="article-description">
+        <section class="presentation-section">
+            <article class="description-article">
                 <h2>Web Development Certificates</h2>
                 <p>Acquired certificates and a diploma from the training at SoftUni (Software University) prove the
                     knowledge and skills you have acquired and must be presented to employers.
@@ -38,16 +38,15 @@
                     JavaScript Web Developer - 100 credits).
                 </p>
             </article>
-            <article class="article-certificates">
-                <img src="./images/blue-certificate.jpg" alt="SoftUni Certificates and Diplomas">
-                <img src="./images/dark-certificate.jpg" alt="SoftUni Certificates and Diplomas">
+            <article>
+                <img class="blue-certificate" src="./images/blue-certificate.jpg" alt="SoftUni Certificates and Diplomas"><img class="dark-certificate" src="./images/dark-certificate.jpg" alt="SoftUni Certificates and Diplomas">
             </article>
             <footer>
                 <p>The diploma awarded by SoftUni is not state recognized but is recognized by the employers.
                 </p>
             </footer>
         </section>
-        <section class="section-diploma">
+        <section class="diploma-section">
             <h2>Diploma</h2>
             <article>
                 <p>Web Developers master the programming and practical development of web-based Java software and the
@@ -70,22 +69,26 @@
                 </p>
             </footer>
         </section>
-        <section class="section-apply">
-            <h2>Explore our Software Engineering Program</h2>
-            <p>Start with a free Programming Basics training, begin your career in the IT sector and graduate as a full
-                stack developer!
-            </p>
-            <button class="apply-btn">APPLY</button>
-            <button class="curriculum-btn">CURRICULUM</button>
+        <section class="apply-section">
+            <article class="apply-main-article">
+                <h2>Explore our Software Engineering Program</h2>
+                <p>Start with a free Programming Basics training, begin your career in the IT sector and graduate as a full
+                    stack developer!
+                </p>
+            </article>
+            <article class="apply-buttons-article">
+                <button class="apply-btn">APPLY</button>
+                <button class="curriculum-btn">CURRICULUM</button>
+            </article>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <article class="footer-left">
-            <img src="./images/logo.svg" alt="SoftUni Logo">
+            <img class="logo" src="./images/logo.svg" alt="SoftUni Logo">
             <p>&copy; 2020 - Software University LTD</p>
         </article>
         <article class="footer-right">
-            <nav>
+            <nav class="footer-nav">
                 <ul>
                     <li><a href="#">Curriculum</a></li>
                     <li><a href="#">About Us</a></li>

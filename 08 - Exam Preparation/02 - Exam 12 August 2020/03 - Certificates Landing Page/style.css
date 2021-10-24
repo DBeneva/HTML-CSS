@@ -1,1 +1,210 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+@font-face {
+    font-family: Lato;
+    src: url("./Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("./Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+    max-width: 1300px;
+    margin: 0;
+}
+
+h2 {
+    font-family: Montserrat;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    margin: 0 40px;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0 30px 0 25px;
+    box-shadow: 2px 4px 7px 4px lightgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+}
+
+header .logo, footer .logo {
+    max-width: 120px;
+}
+
+.header-nav ul, .footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.header-nav ul::after {
+    content: "AA";
+    background-color: #42ABF8;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    color: white;
+    box-shadow: 0px 0px 6px 1px #42abf8;
+    position: relative;
+    top: 27px;
+    left: 8px;
+}
+
+.header-nav ul li, .footer-nav ul li {
+    padding: 30px 8px;
+    border-top: 4px solid transparent;
+}
+
+.header-nav ul li.li-active {
+    border-top: 4px solid #42ABF8;
+}
+
+.header-nav ul li a, .footer-nav ul li a {
+    text-decoration: none;
+    color: #435162;
+}
+
+.presentation-section {
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("./images/hero-certificates.jpg");
+    background-size: cover;
+    padding: 150px 0 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+
+.presentation-section .description-article {
+    background-color: #29394B;
+    color: white;
+    padding: 25px 30px 25px 25px;
+    border-radius: 6px;
+    width: 55%;
+    margin: 0 60px 0 80px;
+}
+
+.presentation-section .description-article h2 {
+    margin: 0;
+}
+
+.presentation-section footer {
+    flex-basis: 100%;
+}
+
+.presentation-section .dark-certificate {
+    max-width: 190px;
+}
+
+.presentation-section .blue-certificate {
+    max-width: 170px;
+}
+
+.presentation-section footer {
+    padding: 15px 0 0 80px;
+    font-style: italic;
+}
+
+.diploma-section {
+    padding: 60px;
+}
+
+.diploma-section h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.diploma-section article {
+    background-color: #F4F5F7;
+    padding: 10px 20px 20px 20px;
+    line-height: 1.4;
+}
+
+.apply-section {
+    background-image: linear-gradient(rgba(45, 49, 54, 0.5), rgba(45, 49, 54, 0.5)), url("./images/sign-up-prompt-background.jpg");
+    margin: 60px;
+    padding: 20px 0 40px 0;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+.apply-main-article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.apply-section article p {
+    width: 65%;
+    padding-bottom: 20px;
+}
+
+.apply-btn, .curriculum-btn {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.apply-section .apply-btn {
+    background-color: #FFFFFF;
+    color: #5AB6F9;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+}
+
+.apply-btn::after {
+    content: "";
+    background-color: #FFFFFF;
+    width: 1px;
+    height: 22px;
+    margin: 10px;
+    position: absolute;
+    top: -5px;
+    left: 108px;
+}
+
+.apply-section .curriculum-btn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 25px;
+    border: 1px solid #E1E4E7;
+    border-radius: 8px;
+}
+
+.footer {
+    border-top: 1px solid #79848F;
+    padding: 30px 0;
+    margin: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer p {
+    margin: 8px 0 0 30px;
+    color: #D4D4D4;
+}
+
+.footer-nav ul li {
+    padding: 0 8px;
+}
