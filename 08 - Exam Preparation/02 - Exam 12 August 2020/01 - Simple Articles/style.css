@@ -1,0 +1,109 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+@font-face {
+    font-family: Lato;
+    src: url("./Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("./Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    font-family: Lato;
+    max-width: 1200px;
+}
+
+h2, h3 {
+    font-family: Montserrat;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: flex;
+}
+
+.description, .enroll-now {
+    border-radius: 7px;
+    margin: 0 25px;
+    width: 50%;
+    padding: 30px;
+}
+
+.description {
+    background-color: #E3F3FD;
+    box-shadow: 1px 1px 6px -2px gray;
+}
+
+.description ul {
+    padding: 0;
+}
+
+.description ul li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+.description ul li i {
+    color: #58B2F9;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.enroll-now {
+    border: 4px solid #44A9F8;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.enroll-now h2 {
+    font-size: 18px;
+}
+
+.enroll-now strong {
+    color: #45A9F8;
+    font-size: 35px;
+}
+
+.enroll-now button {
+    background-color: #44A9F8;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px -2px gray;
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .description, .enroll-now {
+        width: 100%;
+        min-height: 50vh;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        margin: 20px;
+        font-size: 14px;
+    }
+}
