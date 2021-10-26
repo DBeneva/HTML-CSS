@@ -9,15 +9,32 @@ body {
 h2 {
     font-size: 18px;
     border: 3px solid rgb(153, 153, 153);
+    background-color: white;
     border-radius: 4px;
     padding: 8px 18px;
-    margin: 20px auto 0 auto;  
+    justify-content: center;
+    margin: 20px auto 0 auto;
 }
 
 .timeline {
     display: flex;
-    flex-flow: row wrap;
+    width: calc(100% - 40px);
+    flex-flow: column nowrap;
     border: 0.3rem solid rgb(153, 153, 153);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.timeline::after {
+    content: "";
+    width: 5px;
+    height: calc(100% - 20px);
+    background-color: rgb(153, 153, 153);
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    z-index: -1;
 }
 
 h3 {
@@ -25,24 +42,22 @@ h3 {
 }
 
 article {
-    flex-basis: 50%;
+    width: 50%;
     padding: 0 40px;
 }
 
-article:nth-child(even) {
-    margin-left: 50%;
-    border-left: 5px solid rgb(153, 153, 153);
+.right {
+    align-self: flex-end;
     position: relative;
 }
 
-article:nth-child(odd) {
+.left {
+    align-self: flex-start;
     text-align: right;
-    border-right: 5px solid rgb(153, 153, 153);
-    margin-left: 5px;
     position: relative;
 }
 
-article:nth-child(even)::before {
+.right::before {
     content: '';
     background-color: #048E03;
     border: 3px solid rgb(153, 153, 153);
@@ -51,10 +66,10 @@ article:nth-child(even)::before {
     height: 20px;
     position: absolute;
     top: 20px;
-    left: -13px;
+    left: -8px;
 }
 
-article:nth-child(odd)::after {
+.left::after {
     content: '';
     background-color: #FF9A05;
     border: 3px solid rgb(153, 153, 153);
@@ -63,8 +78,7 @@ article:nth-child(odd)::after {
     height: 20px;
     position: absolute;
     top: 20px;
-    left: 100%;
-    transform: translate(-8px, 0);
+    left: calc(100% - 8px);
 }
 
 p {
@@ -72,20 +86,31 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+    .timeline {
+        padding-right: 20px;
+    }
+    
     h2 {
-        margin: 40px 40px 0 40px;
+        margin: 20px;
     }
 
-    article, article:nth-child(odd), article:nth-child(even) {
-        flex-basis: 100%;
+    article, .right, .left {
+        width: 100%;
         padding: 0 40px;
-        border-left: 5px solid rgb(153, 153, 153);
-        border-right: none;
         margin-left: 70px;
         text-align: left;
     }
 
-    article:nth-child(odd)::before {
+    .right, .left {
+        align-self: flex-start;
+        margin-left: 40px;
+    }
+
+    .timeline::after {
+        left: 40px;
+    }
+
+    .left::before {
         content: '';
         background-color: #FF9A05;
         border: 3px solid rgb(153, 153, 153);
@@ -94,10 +119,10 @@ p {
         height: 20px;
         position: absolute;
         top: 20px;
-        left: -13px;
+        left: -8px;
     }
 
-    article:nth-child(odd)::after {
+    .left::after {
         display: none;
     }
 }
