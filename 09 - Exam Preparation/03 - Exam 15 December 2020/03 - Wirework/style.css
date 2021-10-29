@@ -141,7 +141,7 @@ body {
 }
 
 .cta {
-    padding: 57px 0;
+    padding: 57px 0 90px 0;
     text-align: center;
 }
 
@@ -169,4 +169,41 @@ body {
     padding: 20px 50px;
     border: none;
     margin-top: 20px;
+}
+
+.skills {
+    background-color: #383838;
+    color: #696A69;
+    display: flex;
+    padding: 75px 35px 105px 35px;
+}
+
+.skill {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.skill-title {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.skill-content {
+    letter-spacing: 0.7px;
+    line-height: 2;
+}
+
+.footer {
+    background-color: #1B9772;
+    color: #5BAD83;
+    text-align: center;
+    padding: 80px 0 100px;
+    letter-spacing: 1.7px;
+}
+
+.footer-link {
+    color: #A2D4C5;
+    text-decoration: none;
 }
