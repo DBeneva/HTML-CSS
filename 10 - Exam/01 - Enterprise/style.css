@@ -1,0 +1,82 @@
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 40px 220px;
+    color: #29323F;
+}
+
+.main {
+    background-color: #F6F8F9;
+    padding: 70px 70px 0 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+}
+
+.content, .img {
+    width: 40%;
+}
+
+.content-suptitle {
+    font-size: 11px;
+    letter-spacing: 0.9px;
+}
+
+.content-title {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 18px 0 30px 0;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    color: #666F78;
+}
+
+.content-cta {
+    margin: 32px 0 85px 0;
+}
+
+.content-cta-contact, .content-cta-info {
+    border-radius: 4px;
+    margin-right: 12px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.content-cta-contact {
+    padding: 15px 20px;
+    background-color: #7573F6;
+    color: white;
+    border: none;
+}
+
+.content-cta-info {
+    border: 1px solid #29323F;
+    background-color: transparent;
+    font-weight: bold;
+    color: #29323F;
+    padding: 14px 22px;
+}
+
+.img {
+    align-self: flex-end;
+    padding-left: 30px;
+}
+
+.img img {
+    width: 85%;
+}
