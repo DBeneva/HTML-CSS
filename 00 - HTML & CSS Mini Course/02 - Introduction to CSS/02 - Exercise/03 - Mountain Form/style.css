@@ -11,28 +11,26 @@ html {
 body {
     width: 1800px;
     font-family: Helvetica, sans-serif;
-    margin: 60px;
+    margin: 70px 307px;
 }
 
 form {
-    width: 40vw;
-    min-height: 538px;
+    width: 32vw;
 }
 
 section {
     display: inline-block;
     width: 50%;
-    height: 100%;
-    float: left;
+    height: 370px;
     margin: 0px;
     padding: 0px;
 }
 
 section:first-child {
     width: 45%;
-    background: url(./Images/peak.jpg);
+    background-image: linear-gradient(to bottom, rgba(65, 73, 93, 0.5), rgba(53, 43, 53, 0.6)), url('./Images/peak.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     background-size: 100%;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -41,25 +39,32 @@ section:first-child {
     padding: 15px 0px 30px 0px;
 }
 
+h1 {
+    font-size: 19px;
+    margin: 8px 0 262px 0;
+}
+
 section:first-child p {
-    padding-top: 350px;
     font-style: italic;
+    font-size: 14px;
+}
+
+i {
+    font-size: 14px;
 }
 
 section:last-child {
-    height: inherit;
-    border: 4px solid black;
+    border: 3px solid black;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    padding: 80px;
 }
-
+/* 
 label, input {
     display: block;
 }
 
 label {
-    color: lightgray;
+    color: rgb(218, 217, 220);
     padding: 10px;
 }
 
@@ -68,4 +73,5 @@ input {
     border-bottom: 1px solid black;
     font-size: 20px;
     padding: 10px;
-}
+    color: rgb(118, 115, 115);
+} */

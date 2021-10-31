@@ -9,18 +9,22 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="/">
         <section>
             <h1>Sign Up</h1>
             <p>Privacy policy & terms of service</p>
             <i class="far fa-snowflake"></i>
         </section>
         <section>
-            <label>USERNAME<input type="text" placeholder="Username"></label>            
-            <label>E-MAIL<input type="text" placeholder="Email"></label>            
-            <label>PASSWORD<input type="password" placeholder="**********"></label>            
-            <label>REPEAT PASSWORD<input type="password" placeholder="**********"></label>
-            <button>Get Started</button>
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" placeholder="Username">            
+            <label for="email">E-MAIL</label>
+            <input type="text" id="email" placeholder="Email">            
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" placeholder="**********">            
+            <label for="repass">REPEAT PASSWORD</label>
+            <input type="password" id="repass" placeholder="**********">
+            <input type="submit" value="Get Started">
             <p>or <a href="#">Sign in</a></p>
         </section>
     </form>

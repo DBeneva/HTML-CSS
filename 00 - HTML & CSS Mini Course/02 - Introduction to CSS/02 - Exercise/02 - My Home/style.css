@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    margin: 40px 75px;
+    margin: 40px 78px;
     max-width: 1180px;
 }
 
@@ -34,7 +34,7 @@ header h2 {
 }
 
 header article:first-child {
-    width: 63%;
+    width: 62.8%;
 }
 
 header p {
@@ -49,9 +49,9 @@ main {
 }
 
 main article {
-    width: 30.5%;
+    width: 30.2%;
     height: 250px;
-    padding: 18px 23px 0 0;
+    padding: 18px 25px 0 0;
     display: inline-block;
 }
 
