@@ -1,4 +1,6 @@
 @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 html {
     box-sizing: border-box;
@@ -10,18 +12,19 @@ html {
 
 body {
     width: 1800px;
-    font-family: Helvetica, sans-serif;
+    font-family: Lato, sans-serif;
     margin: 70px 307px;
 }
 
 form {
     width: 32vw;
+    height: 370px;
 }
 
 section {
     display: inline-block;
     width: 50%;
-    height: 370px;
+    height: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -37,16 +40,19 @@ section:first-child {
     color: white;
     text-align: center;
     padding: 15px 0px 30px 0px;
+    float: left;
 }
 
 h1 {
-    font-size: 19px;
-    margin: 8px 0 262px 0;
+    font-size: 20px;
+    margin: 6px 0 260px 0;
+    letter-spacing: 1px;
 }
 
 section:first-child p {
     font-style: italic;
     font-size: 14px;
+    margin-bottom: 5px;
 }
 
 i {
@@ -57,25 +63,48 @@ section:last-child {
     border: 3px solid black;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+    padding: 75px 30px 0 68px;
+    width: 278px;
 }
 
-
-
-
-/* 
 label, input {
     display: block;
 }
 
 label {
     color: rgb(218, 217, 220);
-    padding: 10px;
+    font-size: 12px;
 }
 
 input {
     border: none;
-    border-bottom: 1px solid black;
-    font-size: 20px;
-    padding: 10px;
+    border-bottom: 1px solid #38082A;
+    font-size: 16px;
+    padding-top: 3px;
     color: rgb(118, 115, 115);
-} */
+    width: 90%;
+    margin-bottom: 14px;
+}
+
+input[type="submit"] {
+    background-color: #38082A;
+    padding: 8px;
+    color: white;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 58%;
+}
+
+section:last-child p {
+    color:rgb(118, 115, 115);
+    display: inline-block;
+    font-size: 14px;
+    width: 35%;
+}
+
+section:last-child a {
+    text-decoration: none;
+    color: #38082A;
+}
