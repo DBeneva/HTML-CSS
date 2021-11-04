@@ -14,9 +14,7 @@
 @import url('./05-objects/objects-list.css');
 @import url('./05-objects/objects-containers.css');
 
-@import url('./06-components/components-site-header.css');
-@import url('./06-components/components-primary-site-navigation.css');
-@import url('./06-components/components-cta.css');
+@import url('./06-components/components-button.css');
 
 @import url('./07-utilities/u-text-decoration.css');
 @import url('./07-utilities/u-uppercase.css');

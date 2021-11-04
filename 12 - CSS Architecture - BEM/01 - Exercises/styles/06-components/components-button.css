@@ -1,0 +1,19 @@
+.c-button {
+    border: none;
+    border-radius: 100px;
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    padding: 14px 48px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.c-button:hover {
+    cursor: pointer;
+}
