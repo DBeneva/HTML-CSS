@@ -1,11 +1,10 @@
 .c-button {
     border: none;
     border-radius: 100px;
-    background-color: #FFA000;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    font-family: Lato, sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 20px;
+    font-weight: 900;
     color: #fff;
     padding: 14px 48px;
     display: flex;
@@ -14,6 +13,52 @@
     text-transform: uppercase;
 }
 
+.c-button--primary {
+    background-color: #FFA000;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.c-button--secondary {
+    border: 1px solid #FFA000;
+    background: #fff;
+    color: #FFA000;
+    box-shadow: none;
+}
+
+.c-button--secondary.c-button--pressed {
+    background-color: #FFEDB3;
+}
+
+.c-button--secondary:hover {
+    background-color: #FFF8E1;
+    box-shadow: none !important;
+}
+
 .c-button:hover {
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.c-button--disabled,
+.c-button[disabled] {
+    background-color: #D6D6D6;
+    box-shadow: none;
+}
+
+.c-button--disabled:hover,
+.c-button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.c-button--disabled,
+.c-button[disabled] {
+    background-color: #D6D6D6;
+    box-shadow: none;
+}
+
+.c-button--disabled:hover,
+.c-button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
 }
