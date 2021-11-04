@@ -20,7 +20,7 @@
 
 .c-button--secondary {
     border: 1px solid #FFA000;
-    background: #fff;
+    background: transparent;
     color: #FFA000;
     box-shadow: none;
 }
@@ -51,14 +51,22 @@
     box-shadow: none;
 }
 
-.c-button--disabled,
-.c-button[disabled] {
-    background-color: #D6D6D6;
+.c-button--secondary.c-button--disabled,
+.c-button--secondary[disabled] {
+    background-color: transparent;
+    color: #D6D6D6;
+    border-color: #D6D6D6;
     box-shadow: none;
 }
 
-.c-button--disabled:hover,
-.c-button[disabled]:hover {
+.c-button--secondary.c-button--disabled:hover,
+.c-button--secondary[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
+}
+
+.c-button--small {
+    padding: 9px 18px;
+    font-size: 12px;
+    line-height: 14px;
 }
