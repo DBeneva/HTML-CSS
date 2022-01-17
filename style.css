@@ -24,9 +24,9 @@ body {
     /* color: white; */
     border-radius: 5px;
     box-shadow: 1px 1px 10px -2px black;
-    width: 600px;
-    height: 300px;
-    padding: 20px 20px;
+    width: 350px;
+    height: 200px;
+    /* padding: 16px; */
     
     /* position: relative; */
     /* display: flex; */
@@ -38,25 +38,26 @@ body {
 }
 
 .child {
-    /* background-color: rgba(46, 116, 181, 0.5); */
-  
-    background-image: url('tree.jpg');
+    /* background-image: url('tree.jpg');
     background-repeat: no-repeat;
-    background-position: 25% 70%;
+    background-position: 25% 70%; */
     /* background-attachment: fixed; */
     /* background-position:unset; */
     /* background-size: 34%; */
     /* background-position-y: center; */
-    /* color: #000;
+    
+    background-color: rgb(238, 238, 238);
+    color: #000;
     font-size: 25px;
     font-family: Georgia, serif;
-    text-align: center; */
-    width: 150px;
-    height: 100px;
-    /* border-radius: 5px;
+    text-align: center;
+    width: 80px;
+    /* height: 100px; */
+    border-radius: 5px;
     border: 0.5px solid gray;
     box-shadow: 1px 1px 6px -2px black;
-    margin: 5px; */
+    margin: 5px;
+    padding: 15px;
     /* height: 50%; */
         
     /* position: absolute; */
@@ -65,12 +66,43 @@ body {
     /* width: 33.333%; */
     /* margin: 0 10px; */
     /* flex-grow: 1; */
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     /* align-self: center; */
     /* vertical-align: middle; */
 }
 
-.head, .html {
+.div {
+    background-color: lightgray;
+    color: #000;
+    font-size: 25px;
+    font-family: Georgia, serif;
+    text-align: center;
+    width: 200px;
+    height: 160px;
+    /* border-top-right-radius: 15px; */
+    /* border-bottom-right-radius: 15px; */
+    /* border-radius: 0 15px 15px 0; */
+    /* display: inline; */
+    border-image-source: url('tree.jpg');
+    border-image-width: 20px;
+    border-image-slice: 30%;
+    /* border-image-slice: 30% 50%; */
+    border-image-repeat:space;
+    /* border-color: gray; */
+    border-style: dotted;
+    /* box-shadow: 1px 1px 6px -2px black; */
+    outline: 2px solid lightgray;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.second {
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* .head, .html {
     background-color: rgb(238, 238, 238);
     color: gray;
     font-size: 16px;
@@ -111,4 +143,4 @@ p {
     padding: 10px 20px;
     color: rgb(56, 56, 56);
     text-align: center;
-}
+} */
