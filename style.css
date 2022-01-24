@@ -94,7 +94,7 @@ body {
     /* background-attachment:fixed;
     background-position:70px 140px; */
     resize:none;
-    cursor:e-resize;
+    cursor:grab;
     /* border-radius: 5px; */
     /* border: 2px solid gray; */
     /* color: white; */
